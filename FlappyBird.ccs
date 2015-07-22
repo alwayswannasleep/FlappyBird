@@ -1,0 +1,65 @@
+<Solution>
+  <PropertyGroup Name="FlappyBird" Version="2.3.0.1" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainMenuScene.csd" Type="Scene" />
+        <Folder Name="Resources">
+          <Folder Name="fonts">
+            <TTF Name="Marker Felt.ttf" />
+          </Folder>
+          <Folder Name="ipad">
+            <Image Name="HelloWorld.png" />
+          </Folder>
+          <Folder Name="ipadhd">
+            <Image Name="Background.png" />
+            <Image Name="Ball.png" />
+            <Image Name="Menu Button Clicked.png" />
+            <Image Name="Menu Button.png" />
+            <Image Name="Pipe.png" />
+            <Image Name="Play Button Clicked.png" />
+            <Image Name="Play Button.png" />
+            <Image Name="Retry Button Clicked.png" />
+            <Image Name="Retry Button.png" />
+            <Image Name="Splash Screen.png" />
+            <Image Name="Title.png" />
+          </Folder>
+          <Folder Name="iphone">
+            <Image Name="Background.png" />
+            <Image Name="Ball.png" />
+            <Image Name="Menu Button Clicked.png" />
+            <Image Name="Menu Button.png" />
+            <Image Name="Pipe.png" />
+            <Image Name="Play Button Clicked.png" />
+            <Image Name="Play Button.png" />
+            <Image Name="Retry Button Clicked.png" />
+            <Image Name="Retry Button.png" />
+            <Image Name="Splash Screen.png" />
+            <Image Name="Title.png" />
+          </Folder>
+          <Folder Name="iphonehd">
+            <Image Name="Background.png" />
+            <Image Name="Ball.png" />
+            <Image Name="Menu Button Clicked.png" />
+            <Image Name="Menu Button.png" />
+            <Image Name="Pipe.png" />
+            <Image Name="Play Button Clicked.png" />
+            <Image Name="Play Button.png" />
+            <Image Name="Retry Button Clicked.png" />
+            <Image Name="Retry Button.png" />
+            <Image Name="Splash Screen.png" />
+            <Image Name="Title.png" />
+          </Folder>
+          <Folder Name="iphonehd5">
+            <Image Name="HelloWorld.png" />
+          </Folder>
+          <Folder Name="Sounds">
+            <Audio Name="Hit.mp3" />
+            <Audio Name="Point.mp3" />
+            <Audio Name="Wing.mp3" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
