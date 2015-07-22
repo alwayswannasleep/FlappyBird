@@ -1,0 +1,4 @@
+#pragma once
+
+#define SPLASH_SCENE_DISPLAY_TIME 2
+#define TRANSITION_TIME 0.5

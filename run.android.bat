@@ -1,0 +1,1 @@
+cocos run -s E:\Projects\FlappyBird\FlappyBird -p android
