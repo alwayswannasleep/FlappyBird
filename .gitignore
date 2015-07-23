@@ -22,3 +22,5 @@ proj.android/obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/SplashScene.
 *.d
 proj.android/obj/local/armeabi/objs/cpufeatures/cpu-features.o.d
 proj.android/libs/armeabi/gdb.setup
+*.o
+proj.android/obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/AppDelegate.o
