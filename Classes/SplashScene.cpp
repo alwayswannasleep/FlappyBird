@@ -35,5 +35,5 @@ void CSplashScene::GoToMainMenuScene(
 {
   auto scene = CMainMenuScene::CreateScene();
 
-  DIRECTOR->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
+  GET_DIRECTOR->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
 }

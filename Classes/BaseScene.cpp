@@ -1,4 +1,5 @@
 #include "BaseScene.h"
+#include "Definitions.h"
 
 USING_NS_CC;
 
@@ -18,9 +19,8 @@ bool CBaseScene::Init()
   if (!Layer::init())
     return false;
 
-  DIRECTOR      = Director::getInstance();
-  m_VisibleSize = DIRECTOR->getVisibleSize();
-  m_Origin      = DIRECTOR->getVisibleOrigin();
+  m_VisibleSize = GET_SCREEN_SIZE;
+  m_Origin      = GET_SCREEN_ORIGIN;
 
   return true;
 }

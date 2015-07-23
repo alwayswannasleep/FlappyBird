@@ -1,6 +1,31 @@
 #pragma once
 
-#define SPLASH_SCENE_DISPLAY_TIME 2
-#define TRANSITION_TIME 0.5
+#define GET_DIRECTOR                 cocos2d::Director::getInstance()
+#define GET_SCREEN_SIZE              GET_DIRECTOR->getVisibleSize()
+#define GET_SCREEN_ORIGIN            GET_DIRECTOR->getVisibleOrigin()
 
-#define PIPE_SPAWN_FREQUENCY 1.0f
+#define DEVELOP_SCREEN_WIDTH         640
+#define SCREEN_DELTA_FACTOR          (float)(GET_SCREEN_SIZE.width / DEVELOP_SCREEN_WIDTH)
+
+#define SPLASH_SCENE_DISPLAY_TIME    2
+#define TRANSITION_TIME              0.5
+
+#define PIPE_MOVEMENT_SPEED_DEFAULT  0.01f
+#define PIPE_SPAWN_FREQUENCY         1.5f
+#define PIPE_MOVEMENT_SPEED          PIPE_MOVEMENT_SPEED_DEFAULT / SCREEN_DELTA_FACTOR
+
+#define PIPE_GAP                     10
+#define UPPER_SCREEN_PIPE_THRESHOLD  0.65f
+#define LOWER_SCREEN_PIPE_THRESHOLD  0.35f
+
+#define DELTA_POSITION_FACTOR        1.5f
+
+#define BIRD_COLLISION_BITMASK       0x000001
+#define OBSTACLE_COLLISION_BITMASK   0x000002
+#define POINT_COLLISION_BITMASK      0x000003
+
+#define BIRD_FLYING_SPEED_DEFAULT    180
+#define BIRD_FLYING_SPEED            SCREEN_DELTA_FACTOR * BIRD_FLYING_SPEED_DEFAULT
+#define BIRD_FLYING_DURATION         0.2f
+
+#define FONT_SIZE_SCALE              0.06f

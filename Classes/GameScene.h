@@ -2,6 +2,7 @@
 
 #include "BaseScene.h"
 #include "Pipe.h"
+#include "Bird.h"
 
 class CGameScene :
   public CBaseScene
@@ -20,6 +21,10 @@ public: // Interface
 
 protected: // Service
 
+  void update(
+      float _DeltaTime
+    ) override;
+
   void SetPhysicsWorld(
       cocos2d::PhysicsWorld* _World
     )
@@ -31,9 +36,30 @@ protected: // Service
       float _DeltaTime
     );
 
+  bool OnContactBegin(
+      cocos2d::PhysicsContact& _Content
+    );
+
+  bool onTouchBegan(
+      cocos2d::Touch* _Touch,
+      cocos2d::Event* _Event
+    ) override;
+
+  void StopFlying(
+      float _DeltaTime
+    );
+
+  void OnPointsIncrease();
+
 protected: // Members
 
   cocos2d::PhysicsWorld* m_SceneWorld;
 
+  const char *           m_CounterText;
+  int                    m_Points;
+
+  cocos2d::Label*        m_ScoresLabel;
+
+  CBird*                 m_Bird;
   CPipe                  m_Pipe;
 };

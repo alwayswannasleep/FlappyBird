@@ -2,11 +2,13 @@
 
 #include "cocos2d.h"
 
-#define DIRECTOR m_Director
-
 class CBaseScene :
   public cocos2d::Layer
 {
+public: // Override
+
+  virtual bool init() override;
+
 public: // Interface
 
   static cocos2d::Scene * CreateScene();
@@ -14,12 +16,6 @@ public: // Interface
   virtual bool Init();
 
   CREATE_FUNC(CBaseScene);
-
-public: // Override
-
-  virtual bool init() override;
-
-protected: // Service
 
   template <
       typename T,
@@ -41,7 +37,7 @@ protected: // Service
     typename T,
     typename = typename std::enable_if<std::is_base_of<Node, T>::value>::type>
   void AddChild(
-      T*              _Child,
+      T*             _Child,
       cocos2d::Point _Point
     )
   {
@@ -52,8 +48,6 @@ protected: // Service
 
 protected: // Members
 
-  cocos2d::Director * m_Director;
-
-  cocos2d::Size       m_VisibleSize;
-  cocos2d::Vec2       m_Origin;
+  cocos2d::Size m_VisibleSize;
+  cocos2d::Vec2 m_Origin;
 };

@@ -1,16 +1,21 @@
 #pragma once
 
-#include "cocos2d.h"
+#include "BaseScene.h"
 
 class CPipe
 {
 public: // Construction/Destruction
-
+  
   CPipe();
 
 public: // Interface
 
   void SpawnPipe(
-      cocos2d::Layer* _Layer
+      CBaseScene* _Layer
     );
+
+protected:
+
+  cocos2d::Size m_VisibleSize;
+  cocos2d::Vec2 m_Origin;
 };

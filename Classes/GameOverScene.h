@@ -2,7 +2,7 @@
 
 #include "BaseScene.h"
 
-class GameOverScene :
+class CGameOverScene :
   public CBaseScene
 {
 public:
@@ -11,6 +11,5 @@ public:
 
   bool Init() override;
 
-  // implement the "static create()" method manually
-  CREATE_FUNC(GameOverScene);
+  CREATE_FUNC(CGameOverScene);
 };

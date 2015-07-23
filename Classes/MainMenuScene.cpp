@@ -24,6 +24,17 @@ bool CMainMenuScene::Init()
 
   AddChild(Sprite::create("Background.png"));
 
+  auto Title = Sprite::create("Title.png");
+
+  Title->setPosition(
+    Point(
+        m_VisibleSize.width / 2 + m_Origin.x,
+        m_VisibleSize.height + m_Origin.y - Title->getContentSize().height / 2
+      )
+    );
+
+  addChild(Title);
+
   auto PlayButton = MenuItemImage::create(
       "Play Button.png",
       "Play Button Clicked.png",
@@ -43,5 +54,5 @@ void CMainMenuScene::GoToGameScene(
 {
   auto scene = CGameScene::CreateScene();
 
-  DIRECTOR->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
+  GET_DIRECTOR->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
 }

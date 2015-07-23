@@ -2,7 +2,7 @@
 
 USING_NS_CC;
 
-Scene* GameOverScene::CreateScene()
+Scene* CGameOverScene::CreateScene()
 {
   auto scene = Scene::create();
 
@@ -13,9 +13,9 @@ Scene* GameOverScene::CreateScene()
   return scene;
 }
 
-bool GameOverScene::Init()
+bool CGameOverScene::Init()
 {
-  if (!CBaseScene::init())
+  if (!CBaseScene::Init())
   {
     return false;
   }

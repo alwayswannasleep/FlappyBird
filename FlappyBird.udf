@@ -1,4 +1,4 @@
-<UserData>
+<UserData Version="2.3.1.1">
   <Properties>
     <Item Key="PackageParamsKey">
       <Value ctype="PackageParams">
@@ -6,16 +6,17 @@
         <LuaEncryptKey Value="" />
         <LuaEncryptSign Value="" />
         <Android_PackageName Value="org.cocos.FlappyBird" />
-        <AndroidkeyStore Value="" />
+        <AndroidkeyStore Value="E:\Projects\FlappyBird\FlappyBird\publish\FlappyBird.keystore" />
         <AndroidVersion Value="android-15" />
         <iOS_Target Value="FlappyBird iOS" />
         <iOS_BundleID Value="" />
-        <Platform Value="None" />
+        <Platform Value="Android" />
+        <RunPlatform Value="Android" />
         <FrameworkVersion Value="cocos2d-x-3.5" />
-        <IsDebugKeystore Value="True" />
-        <KeystorePassword Value="" />
-        <KeystoreAliasName Value="" />
-        <KeystoreAliasPassword Value="" />
+        <IsDebugKeystore Value="False" />
+        <KeystorePassword Value="dkflbr1996" />
+        <KeystoreAliasName Value="alwayswannsleep" />
+        <KeystoreAliasPassword Value="dkflbr1996" />
         <EnableSourceMap Value="False" />
         <EnableHTML5Advanced Value="False" />
       </Value>
@@ -23,8 +24,8 @@
     <Item Key="CocosRecentOperation">
       <Value ctype="CocosRecentOperation">
         <LastPublishType Value="Resource" />
-        <IsLastPublish Value="True" />
-        <LastRunType Value="Windows" />
+        <IsLastPublish Value="False" />
+        <LastRunType Value="Android" />
       </Value>
     </Item>
     <Item Key="TabsParamsKey">
