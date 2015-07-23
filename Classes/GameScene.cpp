@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "Definitions.h"
 
 USING_NS_CC;
 
@@ -36,5 +37,14 @@ bool CGameScene::Init()
 
   AddChild(EdgeNode);
 
+  schedule(schedule_selector(CGameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY);
+
   return true;
+}
+
+void CGameScene::SpawnPipe(
+    float _DeltaTime
+  )
+{
+  m_Pipe.SpawnPipe(this);
 }

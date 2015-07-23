@@ -1,6 +1,7 @@
 #pragma once
 
 #include "BaseScene.h"
+#include "Pipe.h"
 
 class CGameScene :
   public CBaseScene
@@ -26,7 +27,13 @@ protected: // Service
     m_SceneWorld = _World;
   }
 
+  void SpawnPipe(
+      float _DeltaTime
+    );
+
 protected: // Members
 
   cocos2d::PhysicsWorld* m_SceneWorld;
+
+  CPipe                  m_Pipe;
 };

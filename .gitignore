@@ -10,3 +10,9 @@ Backup
 /proj.android/bin
 /proj.android/gen
 /proj.win32/FlappyBird.sdf
+/proj.win32/.vs
+/proj.win32/Debug
+/proj.win32/res
+/proj.win32/build-cfg.json
+/proj.win32/FlappyBird.aps
+/package
